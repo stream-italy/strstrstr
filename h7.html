@@ -52,3 +52,20 @@ your browser does not support the video tag
 </div>
 </div>
 	</div>
+
+<script>
+
+  var folded = new OriDomi('.yy', {
+  vPanels:          5,
+  speed:            1200,  // folding duration in ms
+  ripple:           5,     // backwards ripple effect when animating
+  shadingIntensity: .5,    // lessen the shading effect
+  perspective:      800,   // smaller values exaggerate 3D distortion
+  maxAngle:         70,    // keep the user's folds within a range of -40 to 40 degrees
+  shading:          'soft', // change the shading type
+  touchEnabled: false,
+  });
+   
+  folded.accordion(-50).setSpeed(0).reveal(0).setSpeed(1000);
+
+</script>
